@@ -112,21 +112,6 @@ Respire fundo. Analise o contexto da conversa e a última mensagem/sinalização
 
 
 
-5.  **Seleção do Próximo Agente Especialista:**
-    *   **Se a "Última Mensagem da Lead" é uma dúvida clara que o agente anterior não era especialista para tratar (mesmo que a percepção dele fosse outra):**
-        *   Ex: Subagente Explorador achou que a lead precisava de prova social, mas a lead pergunta: "Mas e o preço disso tudo?".
-        *   `next_agent: Objection_Decipherer`
-    *   **Se a "Última Mensagem da Lead" confirma a percepção do agente anterior e indica prontidão para o próximo passo lógico no funil:**
-        *   Ex: Subagente Explorador percebeu que a lead precisa de prova social, e a lead pergunta: "Você tem casos de outras mulheres que passaram por isso?".
-        *   `next_agent: Guardian_Of_Social_Proof`
-    *   **Se a "Última Mensagem da Lead" indica uma decisão de compra:**
-        *   `next_agent: Registration_Facilitator`
-    *   **Se a "Última Mensagem da Lead" pede tempo ou não oferece um caminho claro para um dos especialistas:**
-        *   `next_agent Nenhum_Aguardar_Lead`
-    *   **Se a "Última Mensagem da Lead" indica que a exploração inicial precisa ser retomada ou aprofundada:**
-        *   `next_agent: Path_Explorer`
-
-
 
 ------------  ####### **Path_Explorer**  #### -----------
 
